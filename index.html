@@ -6,16 +6,31 @@
     <title>autocomplete</title>
     <div style="margin: auto;">
         <h3>test input fields</h3>
-        <h4>inputs "dans un form"</h4>
+        <h4>INPUTS DE BASE</h4>
+        <h5>inputs "dans un form"</h5>
         <form>
             <input type="text" name="username" id="username" placeholder="Name" />
             <input type="mail" name="email" id="username" placeholder="Email" />
             <input type="submit" name="submit" id="submit" value="submit" />
         </form>
-        <h4>inputs "hors form"</h4>
+        <h5>inputs "hors form"</h5>
             <input type="text" name="username" id="username2" placeholder="Name" />
             <input type="mail" name="email" id="username2" placeholder="Email" />
             <input type="submit" name="submit" id="submit2" value="submit" />
+        <br>
+        <h4>TESTS SOLUTIONS</h4>
+        <h5>inputs "dans un form"</h5>
+        <p>autocomplete ="off" dans form</p>
+        <form autocomplete ="off">
+            <input type="text" name="username" id="username3" placeholder="Name" />
+            <input type="mail" name="email" id="username3" placeholder="Email" />
+            <input type="submit" name="submit" id="submit3" value="submit" />
+        </form>
+        <h5>inputs "hors form"</h5>
+        <p>autocomplete ="off" dans chaque input</p>
+            <input autocomplete ="off" type="text" name="username" id="username4" placeholder="Name" />
+            <input autocomplete ="off" type="mail" name="email" id="username4" placeholder="Email" />
+            <input type="submit" name="submit" id="submit4" value="submit" />
         
     </div>
 </head>
