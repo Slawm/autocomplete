@@ -7,13 +7,13 @@
     <div style="margin: auto;">
         <h3>test input fields</h3>
         <h4>INPUTS DE BASE</h4>
-        <h5>inputs "dans un form"</h5>
+        <h5>inputs dans un "form"</h5>
         <form>
             <input type="text" name="username" id="username" placeholder="Name" />
             <input type="mail" name="email" id="username" placeholder="Email" />
             <input type="submit" name="submit" id="submit" value="submit" />
         </form>
-        <h5>inputs "hors form"</h5>
+        <h5>inputs en dehors d'un "form"</h5>
             <input type="text" name="username" id="username2" placeholder="Name" />
             <input type="mail" name="email" id="username2" placeholder="Email" />
             <input type="submit" name="submit" id="submit2" value="submit" />
@@ -26,13 +26,17 @@
             <input type="text" name="username" id="username3" placeholder="Name" />
             <input type="mail" name="email" id="username3" placeholder="Email" />
             <input type="submit" name="submit" id="submit3" value="submit" />
-            <p> (inputs "dans un form")</p>
+            (inputs dans un form)
         </form>
+
         <p>SOLUTION 2 : autocomplete ="off" dans chaque input</p>
             <input autocomplete ="off" type="text" name="username" id="username4" placeholder="Name" />
             <input autocomplete ="off" type="mail" name="email" id="username4" placeholder="Email" />
             <input type="submit" name="submit" id="submit4" value="submit" />
-            <p> (inputs "dans hors form")</p>
+            (inputs en dehors d'un form")
+
+        <p>SOLUTION 3 : utiliser un textarea à la place d'un input</p>
+            <textarea name ="username" rows="1" style="resize : none; min-height: fit-content;" oninput="this.value = this.value.replace(/\n/g, '')"></textarea>
     </div>
 </head>
 <body>
